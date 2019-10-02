@@ -1,0 +1,48 @@
+{
+    "name": "blockchain-library",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha test --recursive --full-trace --exit",
+        "build": "babel src -d lib",
+        "start": "npm run build & node lib/index.js"
+    },
+    "engines": {
+        "node": ">=8.0"
+    },
+    "engineStrict": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sivabharathy-Sparkout/node-boiler-plate.git"
+    },
+    "keywords": [],
+    "author": "sivabharathy",
+    "license": "MIT",
+    "maintainers": [
+        "sivabharathy"
+    ],
+    "bugs": {
+        "url": "https://github.com/Sivabharathy-Sparkout/node-boiler-plate/issues"
+    },
+    "homepage": "https://github.com/Sivabharathy-Sparkout/node-boiler-plate#readme",
+    "dependencies": {
+        "crypto": "^1.0.1",
+        "dotenv": "^8.1.0",
+        "express": "^4.16.4",
+        "ip": "^1.1.5",
+        "iplocation": "^6.1.0",
+        "mongoose": "^5.7.3",
+        "ws": "^7.1.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.6.2",
+        "@babel/core": "^7.6.2",
+        "@babel/plugin-transform-runtime": "^7.6.2",
+        "@babel/polyfill": "^7.6.0",
+        "@babel/preset-env": "^7.6.2",
+        "@babel/runtime": "^7.6.2",
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0"
+    }
+}
